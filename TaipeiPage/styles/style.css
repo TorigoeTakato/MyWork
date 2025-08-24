@@ -1,0 +1,546 @@
+@charset "utf-8";
+/* html */
+html{
+    font-size: 20px;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    background-color: #ffffff;
+    scroll-behavior: smooth;
+}
+body {
+    width: 100%;
+    min-width: 1200px;
+    background-color:#f4f4f4;
+}
+p {
+    line-height: 1.6em;
+}
+/*header*/
+header{
+    background-image:url("../images/taipeiHero.jpg");
+    background-size: cover;
+    background-position: 0 -600px; 
+    width: 100%;
+    height: 768px;
+    background-size: 100% auto;
+    position: relative
+}
+.headerWrapper {
+    position: relative;
+    width: 1200px;
+    margin: 0  auto;
+}
+.taiwanLogo {
+    display: none;
+    width: 0.296vw;
+}
+.taipeiLogo {
+    width: 300px;
+    height: auto;
+    position: absolute;
+    top: 94px;
+    left: 276px;
+}
+.snsIcon {
+    width: 39px;
+    height: fit-content;
+    position: absolute;
+    z-index: 30;
+    top: 512px;
+    left: 102px;
+}
+.snsIcon img {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 40px;
+}
+.iconBot {
+    margin-bottom: 0;
+}
+header p {
+    color: #ffffff;
+    width: 23em;
+    position: absolute;
+    top: 652px;
+    right: 103px;
+}
+/* main */
+main {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+hr {
+    width: 480px;
+    margin: 0 auto;
+    size: 1px;
+}
+/* パンくずリスト */
+.breadcrumbs {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.mainTopLine {
+    margin: 0;
+    width: 100%;
+    height: 1px;
+    min-width: 1200px;
+    position: absolute;
+    top: 828px;
+}
+/* TOPBUTTON */
+.topButton,.topButton img{
+    position: fixed;
+    bottom: 20px;
+    left: calc(100% - 120px);
+    z-index: 10;
+}
+/* Section */
+section{
+    margin: 80px auto;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+/* Attraction */
+h4 {
+    font-size: 36px;
+    font-weight: 1000px;
+    margin-bottom: 20px;
+}
+.attraction p{
+    background-color: #6cb9d841;
+    width: 500px;
+    padding: 20px 40px;
+}
+.attraction1 p {
+    height: 360px;
+}
+.attraction1 img {
+    width: 600px;
+    height: 360px;
+}
+.attraction2 {
+    margin-top: 20px;
+}
+.attraction3{
+    width: 600px;
+}
+.attraction3 img {
+    width: 290px;
+    height: 167px;
+    object-fit: cover;
+}
+.positionImg1 {
+    object-position: 0 -70px;
+}
+.attraction2 p {
+    line-height: 1;
+    text-align: center;
+    padding: 40px;
+}
+.atrPara {
+    display: inline-block;
+    margin-bottom: 40px;
+}
+/* nightMarket */
+.nightMarket1,.nightMarket2 {
+    margin-top: 80px;
+}
+.nightMarket h2 {
+    margin-left: 620px;
+}
+.nightMarket1 img,.nightMarket2 img {
+    width: 540px;
+    height: 264px;
+    object-fit: cover;
+}
+.nightMarket1 p {
+    width: 21em;
+    padding: 1.6em 0;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+.buttonArea {
+    width: calc-size(fit-content, size + 40px);
+}
+.buttonArea1 {
+    margin-bottom: 40px;
+}
+.buttonArea button {
+    background-image: url("../images/buttonFrame.svg");
+    background-repeat: no-repeat;
+    font-size: 18px;
+    font-weight: 700;
+    width: 210px;
+    height: 90px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+/* Access */
+.accessInfo {
+    font-size: 24px;
+    width: fit-content;
+    margin-left: 92px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+.accessLine {
+    width: 420px;
+    margin-left: 74px;
+    margin-bottom: 80px;
+}
+.accessBigImg {
+    margin: 40px auto;
+    width: 100%;
+    height: auto;
+    display: block; 
+    object-fit: cover;
+}
+.accessSec {
+    width: 400px;
+    font-size: 24px;
+    margin: 60px 80px;
+}
+h5 {
+    margin-bottom: 40px;
+    text-align: center;
+}
+.accessSec span {
+    font-weight: 700;
+}
+.icCard {
+    width: 246px;
+    height: 155px;
+    margin-left: 757px;
+    margin-top: 40px;
+}
+/* modal */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+.modalContent {
+    color:#ffffff;
+    background-color: #007AB7E6;
+    padding: 40px 103px;
+    height: 604px;
+    width: 1366px;
+    position: relative;
+}
+.modalClose {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.modalInner {
+    width: calc-size(fit-content, size + 60px);
+    margin: 0 auto;
+}
+h6 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.modalContent p {
+    line-height: 1.6;
+}
+.modalLeft img {
+    width: 600px;
+    height: 468px;
+}
+.modalRight {
+    margin-top: 56px;
+    width: 25em;
+}
+.modalPara2 {
+    margin-top: 20px;
+    text-align: center;
+}
+@media screen and (max-width:768px) {
+    header {
+        width:100%;
+        max-width: 100vw;
+        /* min-width: 375px; */
+        height: 667px;
+        background-size:cover;
+        background-position: 0 0;
+    }
+    .headerWrapper {
+        width: 100vw;
+    }
+    .taiwanLogo,.taiwanLogo img{
+        display: inline-block;
+        position: absolute;
+        width: 30vw;
+        height: auto;
+        top: 3px;
+        left: 20px;
+    }
+    header p {
+        width: 21em;
+        display: flex;
+        flex-wrap: wrap;
+        z-index: 33;
+        top: 600px;
+        left: calc(100vw - 21em - 20px);
+    }
+    .taipeiLogo {
+        width: 200px;
+        position: absolute;
+        top: 120px;
+        left: calc((100vw - 200px) / 2);
+    } 
+    .snsIcon {
+        top: 421px;
+        left: 20px;
+    }
+    .breadcrumbs ol {
+        height: 32px;
+    }
+    html {
+        font-size: 12px;
+    }
+    body {
+        max-width: 100vw;
+        min-width: 0;
+    }
+    hr {
+        width: 223px;
+    }
+    .flex {
+        display:block;
+    }
+    main,footer {
+        width: 90vw;
+        margin: 0 auto;
+        padding: 0 20px;
+        min-width: 0;
+    }
+    .breadcrumbs {
+        height: 32px;
+    }
+    .mainTopLine {
+        top: 699px;
+        min-width: 0;
+    }
+    section {
+        margin: 40px auto;
+    }
+    h2,.nightMarket h2 {
+        margin: 0 auto;
+    }
+    h4 {
+        font-size: 24px;
+        width: fit-content;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .topButton,.topButton img {
+        position: fixed;
+        left:calc(100% - 56px);
+        bottom: 20px;
+    }
+    .topButton img {
+        height: 48px;
+        width: 48px;
+    }
+    .attraction {
+        width: 78.67vw;
+        margin: 0 auto;
+    }
+    .attraction p,.attraction1 p{
+        width: 78.67vw;
+        height: auto;
+        padding: 8px 36px;
+        margin: 20px auto;
+    }
+    .attraction2 p {
+        padding: 8px 0;
+        line-height: 1;
+    }
+    .atrPara {
+        margin: 8px auto;
+        margin-top: 0;
+    }
+    .attraction1 img {
+        width: 78.67vw;
+        height: auto;
+        margin: 0 auto;
+    }
+    .attraction3{
+        width: 78.67vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    .attraction3 img {
+        width: 36.7vw;
+        height: auto;
+        aspect-ratio: 1 / 1.63636;
+    }
+    .positionImg1 {
+        object-position: 0;
+    }
+    .nightMarket1,.nightMarket2 {
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .nightMarket1 {
+        margin-top: 60px;
+    }
+    .nightMarket1 p {
+        margin: 0 auto;
+    }
+    .nightMarket1 img,.nightMarket2 img {
+        width: 50vw;
+        height: 125px;
+    }
+    .nightMarket1 img {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .nightMarket2 img {
+        margin-top: 20px;
+    }
+    .buttonArea1,.buttonArea2 {
+        display: flex;
+        width: calc-size(fit-content, size + 32px);
+        justify-content: space-between;
+    }
+    .buttonArea {
+        width: fit-content;
+        margin:0 auto;
+    }
+    .buttonArea1 {
+        margin-bottom: 32px;
+    }   
+    .nmImgWrap {
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .buttonArea button {
+        background-image: url("../images/mbuttonFrame.svg");
+        font-size: 12px;
+        width: 131.5px;
+        background-size: contain;
+        background-position: center;
+        height: 48px;
+    }
+    .accessInfo {
+        font-size: 12px;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 1em;
+    }
+    .accessLine {
+        width: 223px;
+        margin: 0 auto;
+    }
+    .accessBigImg {
+        height: 134px;
+    }
+    h5 {
+        margin-bottom: 12px;
+        text-align: left;
+     }
+    .accessSec {
+        font-size: 12px;
+        width: 60vw;
+        margin: 20px auto;
+        margin-bottom: 14.4px;
+    }
+    .icCard {
+        display: block;
+        width: 25vw;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 46px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .modalOverlay {
+        width: 100vw;
+        height: fit-content;
+        z-index: 1000;
+    }
+    .modalContent {
+        position: relative;
+        top: 50vh;
+        left: 50vw;
+        transform: translate(-50%, -50%);
+        width: 100vw;
+        height: fit-content;
+        overflow-y: auto;
+        padding: 40px 20px;
+        box-sizing: border-box;
+    }
+    .modalClose,.modalClose img{
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        width: 28px;
+        height: 28px;
+    }
+    .modalInner {
+        width: 100%;
+    }
+    .modalInner {
+        display: block;
+    }
+    h6 {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+    .modalLeft {
+        width: 100%;
+        text-align: center;
+    }
+    .modalLeft img {
+        width: 60vw;
+        max-width: 60vw;
+        height: auto;
+    }
+    .modalRight {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .modalPara1 {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .modalPara2 {
+        text-align: center;
+        line-height: 1.4;
+    }
+}
+/* モーダルのフェードアニメーション */
+.modalOverlay {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+.modalOverlay.active {
+    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+}
